@@ -64,7 +64,7 @@ OpenShift가 이 명령을 통해 자동적으로 생성한 여러 리소스들�
 
 ### 1.4 Pods
 
-![01_pods](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\QY22Q4_MBO\image01\01_pods.png)
+![01_pods](https://github.com/justone0127/Application-Management-Basics-on-OpenShift/blob/main/images/01_pods.png)
 
 Pods는 호스트에 함께 배포되는 하나 이상의 컨테이너입니다. Pod는 OpenShift에서 배포되고 관리되는 가장 작은 컴퓨트 유닛입니다. 각각의 Pod는 SDN에서 자체 내부 IP 주소가 할당되고 전체 포트 범위를 소유합니다.  Pod 내의 컨테이너는 로컬 스토리지 공간과 네트워킹 리소스를 공유할 수 있습니다.
 
@@ -193,7 +193,7 @@ Events:
 
 ### 1.5 Service
 
-![02_services](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\QY22Q4_MBO\image01\02_services.png)
+![02_services](https://github.com/justone0127/Application-Management-Basics-on-OpenShift/blob/main/images/02_services.png)
 
 **Services**는 유사한 Pod 그룹을 찾기 위해 OpenShift 내에서 편리한 추상화 계층을 제공합니다. 또한 이러한 Pod와 OpenShift 환경 내부에서 Pod에 접근해야 하는 모든 것 사이에서 내부 프록시/로드 밸런서 역할을 합니다. 예를 들어 로드를 처리하기 위해 더 많은 mapit 인스턴스가 필요한 경우 더 많은 Pod를 가동할 수 있습니다. OpenShift는 자동으로 이를 서비스에 대한 엔트포인트로 매핑하며, 들어오는 요청은 서비스가 이제 요청을 더 잘 처리하고 있다는 점을 제외하고 다른 점을 인식하지 못합니다. 
 
@@ -582,7 +582,7 @@ oc get pods
 
 ### 2.4 Background : Routes
 
-![03_routes](C:\Works\01_자료\01_OCP\05_OCP_Demo_hyou\QY22Q4_MBO\image01\03_routes.png)
+![03_routes](https://github.com/justone0127/Application-Management-Basics-on-OpenShift/blob/main/images/03_routes.png)
 
 **Services**는 OpenShift 환경 내에서 내부 추상화 및 로드 밸런싱을 제공하지만 때로는 OpenShift 외부의 클라어인트(사용자, 시스템, 장치 등)가 애플리케이션에 접근해야 합니다. 외부 클라이언트가 OpenShift에서 실행 중인 애플리케이션에 접근할 수 있는 방법은 OpenShift 라우팅 계층을 통하는 것 입니다. 그리고 그 뒤의 데이터 Object는 **Route**입니다.
 
